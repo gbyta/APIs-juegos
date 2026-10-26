@@ -1,0 +1,32 @@
+GET http://127.0.0.1:8000/api/juegos
+
+POST http://127.0.0.1:8000/api/juegos
+Content-Type: application/json
+
+{
+    "nombre": "Gears 5",
+    "descripcion": "Juego de acción y disparos en tercera persona",
+    "precio": 49.99
+}
+
+GET http://127.0.0.1:8000/api/juegos/1
+
+PUT http://127.0.0.1:8000/api/juegos/1
+Content-Type: application/json
+
+{
+    "nombre": "Gears 5 Game of the Year Edition",
+    "descripcion": "Incluye expansiones de la campaña y paquetes multijugador",
+    "precio": 59.99
+}
+
+POST http://127.0.0.1:8000/api/juegos
+Content-Type: application/json
+
+{
+    "nombre": "Juego Incompleto"
+}
+
+GET http://127.0.0.1:8000/api/juegos/9999
+
+DELETE http://127.0.0.1:8000/api/juegos/1
